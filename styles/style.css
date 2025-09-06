@@ -87,7 +87,10 @@ h1 { grid-area: h1; }
 h2 { grid-area: h2; }
 ul { grid-area: ul; }
 
-:is(.sect-1, .sect-2, .sect-3, .sect-4, .sect-5) { margin: 1em; }
+:is(.sect-1, .sect-2, .sect-3, .sect-4, .sect-5) { 
+    margin: 1em;
+    padding: 1em;
+}
 
 .sect-1 {
     background: var(--nvidia-black);
@@ -118,16 +121,12 @@ ul { grid-area: ul; }
     background: var(--steam-blue);
     border: 1rem solid var(--steam-blue-light);
     color: var(--steam-smoke);
-    margin: 1em;
-    padding: 1em;
 }
 
 .sect-3 {
     background: var(--nintendo-red);
     border: 1rem solid var(--nintendo-balck);
     color: var(--nintendo-white);
-    margin: 1em;
-    padding: 1em;
 }
 
 
@@ -135,22 +134,16 @@ ul { grid-area: ul; }
     background: var(--playstation-white);
     border: 1rem solid var(--playstation-blue);
     color: var(--playstation-black);
-    margin: 1em;
-    padding: 1em;
 }
 
 .sect-5 {
     background: var(--xbox-gray-light);
     border: 1rem solid var(--xbox-green);
     color: var(--xbox-gray-coal);
-    margin: 1em;
-    padding: 1em;
 }
 
 .sect-6 {
     background: var(--steam-blue);
     border: 1rem solid var(--steam-blue-light);
     color: var(--steam-smoke);
-    margin: 1em;
-    padding: 1em;
 }
