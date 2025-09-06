@@ -25,5 +25,5 @@ body {
 
 header {
     background: var(--color);
-    border: 1rem double --dettals;
+    border: 1rem double var(--dettals);
 }
