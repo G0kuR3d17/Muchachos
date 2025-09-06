@@ -85,17 +85,21 @@ h1 { grid-area: h1; }
 h2 { grid-area: h2; }
 ul { grid-area: ul; }
 
+:is(.sect-1, .sect-2, .sect-3, .sect-4, .sect-5) { margin: 1em; }
 
 .sect-1 {
     background: var(--nvidia-black);
     border: 1rem solid var(--nvidia-green);
     color: var(--nvidia-green);
-    margin: 1em;
-
+    
     & .card-gallery {
         padding: 1em;
         width: 100%;
         height: fit-content;
+
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
 
         & .card {
             max-width: 300px;
@@ -110,4 +114,5 @@ ul { grid-area: ul; }
     border: 1rem solid var(--steam-blue-light);
     color: var(--steam-smoke);
     margin: 1em;
+    padding: 1em;
 }
