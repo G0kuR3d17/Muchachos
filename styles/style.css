@@ -118,6 +118,7 @@ ul { grid-area: ul; }
                     border-radius: 8px; 
                     display: block;
                 }
+                
                 & label { font-size: 1em; }
             }
         }
