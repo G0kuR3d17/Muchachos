@@ -47,6 +47,7 @@ header {
     width: 100%;
     background: var(--amdryzen-balck);
     border: 1rem double var(--amdryzen-orange);
+    color: var(--amdryzen-white);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
@@ -60,3 +61,14 @@ header {
 h1 { grid-area: h1; }
 h2 { grid-area: h2; }
 ul { grid-area: ul; }
+
+.sect-1 {
+    background: var(--nvidia-black);
+    border: 1rem solid var(--nvidia-green);
+    color: var(--nvidia-green);
+
+    & .card-gallery {
+        width: 100%;
+        height: 10%;
+    }
+}
