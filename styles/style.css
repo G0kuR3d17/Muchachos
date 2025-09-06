@@ -104,9 +104,12 @@ ul { grid-area: ul; }
         gap: 1em;
 
         & .card {
-            max-width: 300px;
-            max-height: 400px;
+            max-width: 350px;
+            max-height: 450px;
 
+            & label {
+                font-size: 0.5em;
+            }
         }
     }
 }
