@@ -50,6 +50,7 @@ body {
     color: var(--nvidia-green);
     height: 100dvh;
     font-size: 1rem;
+    font-family: 'Press Start 2P', 'Orbitron', 'VT323', 'Audiowide', 'Share Tech Mono', sans-serif;
 }
 
 
@@ -95,6 +96,12 @@ ul { grid-area: ul; }
         padding: 1em;
         width: 100%;
         height: fit-content;
+
+        & .card {
+            max-width: 300px;
+            max-height: 400px;
+
+        }
     }
 }
 
