@@ -123,12 +123,13 @@ ul { grid-area: ul; }
 }
 
 .sect-3 {
-    background: var(--xbox-gray-light);
-    border: 1rem solid var(--xbox-green);
-    color: var(--xbox-gray-coal);
+    background: var(--nintendo-red);
+    border: 1rem solid var(--nintendo-balck);
+    color: var(--nintendo-white);
     margin: 1em;
     padding: 1em;
 }
+
 
 .sect-4 {
     background: var(--playstation-white);
@@ -139,9 +140,9 @@ ul { grid-area: ul; }
 }
 
 .sect-5 {
-    background: var(--nintendo-red);
-    border: 1rem solid var(--nintendo-balck);
-    color: var(--nintendo-white);
+    background: var(--xbox-gray-light);
+    border: 1rem solid var(--xbox-green);
+    color: var(--xbox-gray-coal);
     margin: 1em;
     padding: 1em;
 }
