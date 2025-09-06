@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+body * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 body {
     background: var(--fondo);
@@ -17,12 +22,6 @@ body {
     color: var(--font);
 }
 
-body * {
-    background: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
 header {
     background: var(--color);
