@@ -1,9 +1,28 @@
 :root {
-    --fondo: #0D0D0D;
-    --dettals: #00FF66;
-    --font: #007BFF;
-    --color: #2B2CBF;
-    --constrans: #FFF;
+    --nvidia-green: #76b900;
+    --nvidia-black: #000;
+    --nvidia-gray: #333;
+
+    --amdryzen-orange: #ED1C24;
+    --amdryzen-balck: #2e2e2e;
+    --amdryzen-white: #fff;
+
+    --xbox-green: #107c10;
+    --xbox-gray-coal: #1c1c1c;
+    --xbox-gray-light: #d9d9d9;
+
+    --playstation-blue: #003791; 
+    --playstation-black: #000;
+    --playstation-white: #fff;
+
+    --nintendo-red: #e60012;
+    --nintendo-white: #fff;
+    --nintendo-balck: #000;
+
+    --steam-blue-gray: #171a12;
+    --steam-blue: #1b2838;
+    --steam-blue-light: #00adee;
+    --steam-smoke: #c7d5e0;
 }
 
 * {
@@ -24,14 +43,15 @@ body {
 
 
 header {
-    background: var(--color);
-    border: 1rem double var(--dettals);
+    width: 100%;
+    background: var(--amdryzen-balck);
+    border: 1rem double var(--amdryzen-orange);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
-    "h1 ul"
-    "h2 ul"
+    "h1 h1 ul"
+    "h2 h2 ul"
     ;
     gap: 1rem;
 }
