@@ -39,11 +39,18 @@ body {
     height: 100dvh;
 }
 
+main {
+    margin: 1rem;
+}
+
 header {
     width: 100%;
     background: var(--amdryzen-balck);
-    border: 1rem double var(--amdryzen-orange);
+    border: 1em double var(--amdryzen-orange);
     color: var(--amdryzen-white);
+    margin: 0;
+    padding:1em;
+
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto;
@@ -52,14 +59,17 @@ header {
     "h2 h2 ul"
     ;
     gap: 1rem;
+
     & li {
         cursor: pointer;
+        text-decoration: none;
     }
 }
 
 h1 { grid-area: h1; }
 h2 { grid-area: h2; }
 ul { grid-area: ul; }
+
 
 .sect-1 {
     background: var(--nvidia-black);
@@ -68,6 +78,6 @@ ul { grid-area: ul; }
 
     & .card-gallery {
         width: 100%;
-        height: 10%;
+        height: fit-content;
     }
 }
