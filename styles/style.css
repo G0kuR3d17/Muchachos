@@ -101,17 +101,25 @@ ul { grid-area: ul; }
         padding: 1em;
         width: 100%;
         height: fit-content;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
 
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
+        & .track {
+            display: flex;
+            gap: 1em;
 
-        & .card {
-            max-width: 350px;
-            max-height: 450px;
-
-            & label {
-                font-size: 0.5em;
+            & .card {
+                max-width: 350px;
+                max-height: 450px;
+                flex: 0 0 auto;
+                scroll-snap-align: start;
+                
+                & img { 
+                    border-radius: 8px; 
+                    display: block;
+                }
+                & label { font-size: 0.5em; }
             }
         }
     }
