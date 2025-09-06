@@ -33,11 +33,25 @@
     border: 0;
 }
 
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
 body {
     background: var(--nvidia-gray);
     color: var(--nvidia-green);
     height: 100dvh;
+    font-size: 1rem;
 }
+
 
 main {
     margin: 1rem;
@@ -58,7 +72,7 @@ header {
     "h1 h1 ul"
     "h2 h2 ul"
     ;
-    gap: 1rem;
+    gap: 1em;
 
     & li {
         cursor: pointer;
