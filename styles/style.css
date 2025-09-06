@@ -97,3 +97,10 @@ ul { grid-area: ul; }
         height: fit-content;
     }
 }
+
+.sect-2 {
+    background: var(--steam-blue);
+    border: 1rem solid var(--steam-blue-light);
+    color: var(--steam-smoke);
+    margin: 1em;
+}
