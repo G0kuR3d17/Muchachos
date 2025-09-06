@@ -28,9 +28,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-body * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -41,7 +38,6 @@ body {
     color: var(--nvidia-green);
     height: 100dvh;
 }
-
 
 header {
     width: 100%;
@@ -56,6 +52,9 @@ header {
     "h2 h2 ul"
     ;
     gap: 1rem;
+    & li {
+        cursor: pointer;
+    }
 }
 
 h1 { grid-area: h1; }
