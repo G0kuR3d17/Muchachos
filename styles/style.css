@@ -12,7 +12,7 @@
     --xbox-gray-coal: #1c1c1c;
     --xbox-gray-light: #d9d9d9;
 
-    --playstation-blue: #003791; 
+    --playstation-blue: #003791;
     --playstation-black: #000;
     --playstation-white: #fff;
 
@@ -33,28 +33,12 @@
     border: 0;
 }
 
-@media (min-width: 768px) {
-    body {
-        font-size: 1.1rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    body {
-        font-size: 1.2rem;
-    }
-}
-
 body {
+
     background: var(--nvidia-gray);
     color: var(--nvidia-green);
     height: 100dvh;
-    font-size: 1rem;
     font-family: 'Press Start 2P', 'Orbitron', 'VT323', 'Audiowide', 'Share Tech Mono', sans-serif;
-}
-
-main {
-    margin: 1rem;
 }
 
 header {
@@ -63,63 +47,114 @@ header {
     border: 1em double var(--amdryzen-orange);
     color: var(--amdryzen-white);
     margin: 0;
-    padding:1em;
+    padding: 1em;
 
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    "h1 h1 ul"
-    "h2 h2 ul"
+    grid-template-areas:
+        "h1 h1 ul"
+        "h2 h2 ul"
     ;
     gap: 1em;
-
-    & li {
+    & ul {
+        display: flex;
+        width: 11em;
+        flex-direction: column;
+        gap: 10px;
+    }
+    & a {
         cursor: pointer;
-        text-decoration: none;
-        text-decoration-style: none;
         color: var(--amdryzen-white);
     }
 }
 
-h1 { grid-area: h1; }
-h2 { grid-area: h2; }
-ul { grid-area: ul; }
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.5dvh;
+    }
 
-:is(.sect-1, .sect-2, .sect-3, .sect-4, .sect-5) { 
+    header {
+        grid-template-areas:
+            "h1 h1 ul"
+            "h2 h2 ul"
+        ;
+    }
+    th, td {
+        font-size: 1.5dvh
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5dvh;
+    }
+
+    header {
+        grid-template-areas:
+            "h1 h1 ul"
+            "h2 h2 ul"
+        ;
+    }
+    th, td {
+        font-size: 1.5dvh
+    }
+}
+
+h1 {
+    grid-area: h1;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+ul {
+    grid-area: ul;
+}
+
+main {
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+:is(.sect-1, .sect-2, .sect-3, .sect-4, .sect-5) {
     margin: 1em;
     padding: 1em;
+    margin-top: 5em;
 }
 
 .sect-1 {
     background: var(--nvidia-black);
+    height: auto;
     border: 1rem solid var(--nvidia-green);
     color: var(--nvidia-green);
-    
+
     & .card-gallery {
         padding: 1em;
         width: 100%;
-        height: fit-content;
+        height: 40rem;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
 
         & .track {
             display: flex;
-            gap: 1em;
+            gap: 2em;
 
             & .card {
+                width: 290px;
+                height: auto;
                 flex: 0 0 auto;
-                max-width: 350px;
-                max-height: 450px;
                 scroll-snap-align: start;
-                
-                & img { 
-                    border-radius: 8px; 
+
+                & img {
+                    max-width: 290px;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 8px;
                     display: block;
                 }
-                
-                & label { font-size: 1em; }
             }
         }
     }
@@ -129,19 +164,51 @@ ul { grid-area: ul; }
     background: var(--steam-blue);
     border: 1rem solid var(--steam-blue-light);
     color: var(--steam-smoke);
+
+    & article {
+        text-align: justify;
+        text-indent: 1em;
+    }
 }
 
 .sect-3 {
     background: var(--nintendo-red);
     border: 1rem solid var(--nintendo-balck);
     color: var(--nintendo-white);
-}
+    padding: 1em;
+    & table {
+        width:100%; 
+        text-align:center; 
+        border-collapse: collapse; 
+        background-color:var(--nintendo-balck); 
+        color:white;
+        & td, th {
+            padding: 0.5em;
+            border: 1em groove var(--nintendo-balck);
+        }
+    }
 
+}
 
 .sect-4 {
     background: var(--playstation-white);
     border: 1rem solid var(--playstation-blue);
     color: var(--playstation-black);
+    padding: 1em;
+    & .scrolled {
+        overflow-x: auto;
+    }
+    & table {
+        width:100%;
+        text-align:center; 
+        border-collapse: collapse; 
+        background-color:var(--playstation-white); 
+        color:var(--playstation-black);
+        & td, th {
+            padding: 0.5em;
+            border: 1em solid var(--playstation-blue);
+        }
+    }
 }
 
 .sect-5 {
