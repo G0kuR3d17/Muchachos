@@ -68,6 +68,11 @@ header {
                 border: 1em groove var();
                 flex: 0 0 auto;
                 scroll-snap-align: start;
+                & img {
+                    max-width: 300px;
+                    max-height: 300px;
+                    border-radius: 25px;
+                }
             }
         }
     }
