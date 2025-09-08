@@ -1,28 +1,16 @@
 :root {
-    --nvidia-green: #76b900;
-    --nvidia-black: #000;
-    --nvidia-gray: #333;
+<<<<<<< HEAD
 
-    --amdryzen-orange: #ED1C24;
-    --amdryzen-balck: #2e2e2e;
-    --amdryzen-white: #fff;
+    
+>>>>>>> a1890fa2f2a791e1102238a5734d089bf1033688
 
-    --xbox-green: #107c10;
-    --xbox-gray-coal: #1c1c1c;
-    --xbox-gray-light: #d9d9d9;
+    --pancho: black;
+    --pancho: yellow;
+    --pamcho: red; 
 
-    --playstation-blue: #003791;
-    --playstation-black: #000;
-    --playstation-white: #fff;
-
-    --nintendo-red: #e60012;
-    --nintendo-white: #fff;
-    --nintendo-balck: #000;
-
-    --steam-blue-gray: #171a12;
-    --steam-blue: #1b2838;
-    --steam-blue-light: #00adee;
-    --steam-smoke: #c7d5e0;
+    --panchito: green;
+    --panchito: white;
+    --panchio: red;
 }
 
 * {
