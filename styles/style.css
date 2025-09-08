@@ -22,12 +22,12 @@ body {
 }
 
 header {
-    font-size: 1.5dvh;
+    font-size: 5em;
 }
 
 @media (max-width: 1024px) {
     body {
-        font-size: 1.5dvh;
+        font-size: 5em;
     }
 }
 
