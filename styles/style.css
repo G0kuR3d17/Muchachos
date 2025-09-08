@@ -55,6 +55,7 @@ header {
 }
 
 .sect-1 {
+    max-height: 10dvh;
     & .gallery {
         padding: 1em;
         overflow-x: auto;
